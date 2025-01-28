@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    body {
+    width:100%;
+    margin: 0;
+    font-size: 16px;
+    background-image: url('https://puzzlemania-154aa.kxcdn.com/products/2019/puzzle-bluebird-4000-pieces-stewart-a-night-at-the-circus.jpg');
+    height: 100vh;
+    }
+    form {
+        margin: 0 auto;
+        width: 500px;
+        padding:2.5rem;
+        background-color: rgba(255, 0, 0, 0.5); 
+        font-weight: bold;
+    }
+    label {
+        display: block;
+    }
+    h1, p {
+        margin: 1em auto 0.5rem;
+        text-align: center;
+    }
+    #title {
+        font-family: 'Pacifico', cursive;
+        font-size: 2em;
+        padding: 0.5em 0  0;
+    }
+    #description {
+        font-size: 1.125rem;
+        font-style: italic;
+        margin-top: 0.5rem;
+    }
+    input, select {
+        width: 100%
+    }
+    .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    }
+    fieldset {
+        border: none;
+        padding: 1rem 0;
+    }
+    input, textarea {
+        font-style:italic
+        }

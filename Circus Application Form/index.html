@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Join our Circus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+    <h1 id="title">Circus Application From</h1>
+    <p id="description">Join our circus team. Everyone here feels like family</p>
+    <form id="survey-form" method="post" action="/sendData">
+        <fieldset>
+            <label id="name-label" for="name">Name <input type="text" id="name" placeholder="e.g. Peter" required></label>
+            <label for="userSurname">Surname <input type="text" id="userSurname" required></label>
+            <label id="number-label" for="number">Age <input type="number" id="number" min="1" max="120" placeholder="e.g your age" required></label>
+            <label id="email-label" for="email">E-mail <input type="email" id="email" placeholder="e.g. random@email.com" required></label>
+        </fieldset>
+
+<fieldset>
+    <label for="rdfemale"><input type="radio" name="gender" value="female" class="inline">Female</label>
+    <label for="rdmale"><input type="radio" name="gender" value="male" class="inline">Male</label>
+    </fieldset>        
+        <fieldset>Intererested for:
+            <label for="acrobats"><input class="inline" type="checkbox" id="acrobats" value="acrobat">Acrobat</label>
+            <label for="clown"><input class="inline" type="checkbox" id="clown" value="clown">Clown</label>
+            <label for="firebending"><input class="inline" type="checkbox" id="firebending" value="firebending">Firebending</label>
+            <label for="magic"><input class="inline" type="checkbox" id="magic" value="magician">Magician</label>
+            <label for="freak"><input class="inline" type="checkbox" id="freak" value="freak">Freak Show</label>
+            <label for="juggler"><input class="inline" type="checkbox" id="juggler" value="jujggling">Juggling</label>
+            <label for="cannon"><input class="inline" type="checkbox" id="cannon" value="cannon">Human Cannonball</label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">How did you hear about us
+                <select name="dropdown" id="dropdown">    
+                    <option value="">Choose</option>
+                    <option value="1">Friend</option>
+                    <option value="2">Advertisment</option>
+                    <option value="3">TV commercial</option>
+                </select>
+            </label>    
+            <label for="cv">Upload CV<input type="file" id="cv" name="cv"></label>  
+            <lable for="txtComments">Express your thouths about this job application</label>  
+<textarea id="txtComments" name="comments" rows="4" cols="60" placeholder="I am optimistic about this..."></textarea>            
+        </fieldset>
+    <input type="submit" id="submit" value="submit">    
+    </form>
+</body>
+</html>    
