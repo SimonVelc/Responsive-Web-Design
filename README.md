@@ -1,5 +1,5 @@
 # Responsive-Web-Design
-This repository contains projects and code focused on mastering HTML and CSS for building responsive and accessible web designs.
+Projects and code focused on mastering HTML and CSS for building responsive and accessible web designs.
 
 -Circus Application Form: page which is an application form for a job in a circus
 
