@@ -1,0 +1,220 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            }
+        
+        
+        #header-img{
+            width: 30px;
+            height: 40px;
+        }
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        #header {
+            position: fixed;
+            top: 0;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            min-height: 75px;
+            background-color: #eee;
+            width: 98%;
+        }
+        li {
+            list-style-type: none;
+            font-weight: bold;
+        }
+        #nav-bar {
+            display: block;
+        }
+        
+        #hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #hero h2 {
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+        #email { 
+            max-width: 275px;
+            width: 100%;
+            padding: 5px;
+        }
+        .btn {
+            max-width: 150px;
+            width: 100%;
+            height: 30px;
+            margin: 15px 0;
+            border: 0;
+        }
+        #form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .fa {
+            font-weight: 900;
+            font-size: 3em;
+        }
+        .flex {
+            display: grid;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 20% 80%;
+            grid-template-areas: 
+            "icon descr"
+            "icon descr";
+            align-items: center;
+            width: 100%;
+        }
+        .container {
+            max-width: 100px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        #features {  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        .icon {
+            grid-area: icon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 125px;
+            width: 100%;
+        }
+        .descr {
+            grid-area: descr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 125px;
+            left: 0;
+        }
+        #tutorial {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            
+        }
+        #pricing {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+        .product {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 33%;
+            margin: 10px;
+            height: 300px;
+            max-width: 300px;
+        }
+        .product div {
+            padding: 15px 0;
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.5);
+            font-weight: 700;
+            height: 80px;
+        }
+        
+        ol li {
+            padding: 10px 0;
+            margin: 0 auto;
+        }
+        main {
+            width: 100%;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+            width: 80%;
+        }
+        footer ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        body > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            font-style: none;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+        }
+        @media only screen and (max-width: 1000px) {
+            #header {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100px;
+            }
+            #features div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            #nav-bar ul{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+            main {
+                margin-top: 200px;
+            }
+            #video {
+                width: 250px;
+                height: 250px;
+            }
+            #pricing {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                min-width: 200px;
+            }
+            .product .button {
+                margin: 0 auto;
+            }
