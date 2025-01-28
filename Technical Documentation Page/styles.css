@@ -1,0 +1,112 @@
+*{
+            box-sizing: border-box;
+        }
+        #navbar {
+            position: fixed;
+            height: 100%;
+            max-width: 400px;
+            width: 40%;
+            display: block;
+            border-right: 5px solid gray;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5%;
+            
+        }
+        nav li {
+            list-style: none;  
+            position: relative;
+            display: list-item;
+            height: 10%;
+            color: gray;
+            border-top: 2px solid;
+            padding-top: 10%;
+            font-size: 1.2em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main-doc {
+            position: absolute;
+            margin-left: 30%;
+            padding: 20px;
+            margin-bottom: 110px;
+        }
+        ul {
+            display: block;
+        }
+        body {
+            min-width: 290px;
+            line-height: 1.5;
+            display: block;
+            margin: 8px;
+            line-height: 1.5;
+            display: flex;
+        }
+        html {
+            display: block;
+        }
+        .main-section {
+            display: block;
+        }
+        article {
+            margin: 15px;
+            font-size: 0.96rem;
+            display: block;
+            color: #4d4e53;
+        }
+        section header {
+            text-align: left;
+            margin: 0;
+            font-size: 1.8em;
+        }
+        nav header {
+            font-size: 1.8em;
+            margin: 10px;     
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #4d4e53;
+        }
+        a:hover {
+            color:#4d4e53;
+        }
+        code {
+            font-weight: 600;
+        }
+        span {
+            font-weight: bold;
+        }
+        @media (max-width: 1200px) {
+            #navbar {
+                position: absolute;
+                width: 100%;
+                max-width: 1200px;
+                height: 25%;  
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            #main-doc {
+                margin: 120px 5%;
+            }
+            nav ul {
+                width: 100%;
+                display: inline;
+                border-bottom: 1px solid #4d4e53;
+                border-top: none;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                overflow: scroll;
+                min-height: 80px;
+            }
+            #navbar li {
+                display: block;
+                padding: 5%;
+                min-height: 65px;
+            }
+        }

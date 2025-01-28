@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+   <nav id="navbar">
+        <header>HTML Basics</header>
+        <ul>
+            <li><a href="#Introduction_to_HTML" class="nav-link">Introduction to HTML</a></li>
+            <li><a href="#What_is_HTML" class="nav-link">What is HTML</a></li>
+            <li><a href="#Anatomy_of_an_HTML_element" class="nav-link">Anatomy of an HTML element</a></li>
+            <li><a href="#What_is_the_HTML_head" class="nav-link">What is the HTML head</a></li>
+            <li><a href="#Adding_a_title" class="nav-link">Adding a title</a></li>
+            <li><a href="#What_is_a_hyperlink" class="nav-link">What is a hyperlink</a></li>
+            <li><a href="#Anatomy_of_a_link" class="nav-link">Anatomy of a link</a></li>
+            <li><a href="#How_do_we_put_an_image_on_a_webpage" class="nav-link">How do we put an image on a webpage</a></li>
+            <li><a href="#HTML_tables" class="nav-link">HTML tables</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_HTML">
+            <header>Introduction to HTML</header>
+            <article><p>At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.</p></article>
+        </section>
+        <section class="main-section" id="What_is_HTML">
+            <header >What is HTML</header>
+            <article>
+                <p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+                <code>My cat is very grumpy</code>
+                <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (&lt;p&gt;) element:</p>
+                <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_element">
+            <header>Anatomy of an HTML element</header>
+            <article>
+                <p>The anatomy of our element is:</p>
+                <ul>
+                    <li><span>The opening tag:</span>This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+                    <li><span>The content:</span>This is the content of the element. In this example, it is the paragraph text.</li>
+                    <li><span>The closing tag:</span>This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_is_the_HTML_head">
+            <header>What is the HTML head</header>
+            <article><p>The HTML head is the contents of the &lt;head&gt; element. Unlike the contents of the &lt;body&gt; element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. In the above example, the head is quite small:</p></article>
+            <code>
+                &lt;head> <br>
+                &nbsp;&nbsp;&lt;meta charset="utf-8" /><br>
+                &nbsp;&nbsp;&lt;title>My test page&lt;/title><br>
+                  &lt;/head>
+            </code>
+        </section>
+        <section class="main-section" id="Adding_a_title">
+            <header>Adding a title</header>
+            <article>
+                <p>We've already seen the &lt;title> element in action — this can be used to add a title to the document. This however can get confused with the h1 element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!</p>
+                <ul>
+                    <li>The h1 element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.)</li>
+                    <li>The &lt;title> element is metadata that represents the title of the overall HTML document (not the document's content.)</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_is_a_hyperlink">
+            <header>What is a hyperlink</header>
+            <article>
+                <p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).</p>
+            </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_a_link">
+            <header>Anatomy of a link</header>
+           <article>
+            <p>A basic link is created by wrapping the text or other content inside an &lt;a> element and using the href attribute, also known as a Hypertext Reference, or target, that contains the web address.</p>
+            <code>
+                &lt;p><br>
+                &nbsp;&nbsp;I'm creating a link to<br>
+                &nbsp;&nbsp;&lt;a href="https://www.mozilla.org/en-US/">the Mozilla homepage&lt;/a>.<br>
+                  &lt;/p>
+            </code>
+            <p>This gives us the following result:<br>
+            I'm creating a link to <a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a></p>
+           </article>
+        </section>
+        <section class="main-section" id="How_do_we_put_an_image_on_a_webpage">
+            <header>How do we put an image on a webpage</header>
+            <article>
+                <p>In order to put a simple image on a web page, we use the &lt;img> element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt. The src attribute contains a URL pointing to the image you want to embed in the page. As with the href attribute for &lt;a> elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.</p>
+                <p>So for example, if your image is called dinosaur.jpg, and it sits in the same directory as your HTML page, you could embed the image like so:</p>
+                <code>&lt;img src="dinosaur.jpg" alt="Dinosaur" /></code>
+            </article>
+        </section>
+        <section class="main-section" id="HTML_tables">
+            <header>HTML tables</header>
+            <article>
+                <p>A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
